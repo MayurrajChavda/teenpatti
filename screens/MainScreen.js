@@ -20,7 +20,7 @@ const MainScreen = ({navigation}) => {
         <TouchableOpacity style={styles.gameCard} onPress={()=>navigation.navigate('TeenPattiGameSceen')}>
           <Image source={require('../images/game01.jpg')} resizeMode='cover' style={styles.gameCardImg}/>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.gameCard}>
+        <TouchableOpacity style={styles.gameCard} onPress={()=>navigation.navigate('CardGuessingScreen')}>
           <Image source={require('../images/game01.jpg')} resizeMode='cover' style={styles.gameCardImg}/>
         </TouchableOpacity>
         <TouchableOpacity style={styles.gameCard}>

@@ -59,11 +59,9 @@ const GameHeader = () => {
     setX(Dimensions.get('window').width);
     setY(Dimensions.get('window').height);
   }, []);
-
-  console.log(user);
   return (
     <View style={{ paddingHorizontal: 20, flexDirection: 'row', justifyContent: 'space-between',position: 'relative', zIndex: 1 }}>
-      <View style={{ position: 'absolute', zIndex: 1 }}>
+      <View style={{ position: 'absolute', zIndex: 2 }}>
         {mode==0&&topWindow?<GameLogin x={x} y={y} close={setTopWindow} add={saveData}/>:<></>}
         {mode==1&&topWindow?<GameProfile x={x} y={y} close={setTopWindow} data={user} logout={deleteData}/>:<></>}
         {settingWindow?<GameSettings x={x} y={y} close={setSettingWindow} />:<></>}

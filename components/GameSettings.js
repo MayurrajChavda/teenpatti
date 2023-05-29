@@ -17,7 +17,7 @@ export default GameSettings
 const styles = StyleSheet.create({
     container:{
         backgroundColor: 'rgba(50,50,50,0.8)',
-        zIndex: 1,
+        zIndex: 10,
         position: 'absolute',
         paddingHorizontal:30,
         paddingTop:100
